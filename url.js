@@ -23,7 +23,7 @@
             return config;
         }
 
-        if (/^[a-z]+:/.test(url)) {
+        if (/^[a-z]+[-a-z]*:/.test(url)) {
             config.protocol = true;
             config.host = true;
 
